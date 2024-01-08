@@ -1,0 +1,54 @@
+body {
+    font-family: 'BB-Regular',Helvetica 'Neue',Helvetica,Arial,sans-serif;
+}
+
+header figure img {
+    height: 60px;
+    width: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+#side-bar {
+    width: 20%;
+}
+#side-bar ul li{
+    list-style: none;
+}
+#side-bar h5 {
+    width: 50%;
+    text-align: center;
+    font-size: medium;
+    cursor: pointer;
+}
+#side-bar h5:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+#shop-cart {
+    width: 80%;
+}
+.shop-items {
+    width: 50%;
+    height: 80%;
+}
+.checkout {
+    width: 50%;
+    height: 20%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
