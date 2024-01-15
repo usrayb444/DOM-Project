@@ -1,54 +1,137 @@
 body {
-    font-family: 'BB-Regular',Helvetica 'Neue',Helvetica,Arial,sans-serif;
-}
-
-header figure img {
-    height: 60px;
-    width: auto;
+  font-family: "BB-Regular", Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
 }
 
+header figure img {
+  height: 60px;
+  width: auto;
+  transition: height 0.5s, width 0.5s;
+}
+
+header figure img:hover {
+  height: 70px;
+}
 
 main {
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
-#side-bar {
-    width: 20%;
+
+#Shopping-cart {
+  padding: 20px;
 }
-#side-bar ul li{
-    list-style: none;
+
+.item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
 }
-#side-bar h5 {
-    width: 50%;
-    text-align: center;
-    font-size: medium;
-    cursor: pointer;
+
+.item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-#side-bar h5:hover {
-    background-color: black;
-    color: white;
-    transition: 0.5s;
+
+.price {
+  font-weight: bold;
 }
-#shop-cart {
-    width: 80%;
+
+.kpr {
+  display: flex;
+  gap: 10px;
 }
-.shop-items {
-    width: 50%;
-    height: 80%;
+
+.opPlus {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ccc;
 }
-.checkout {
-    width: 50%;
-    height: 20%;
+.opMins {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ccc;
 }
+
+.btn-outline-danger {
+  margin-top: 10px;
+}
+
+.item figure img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#pricing {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  max-width: 800px; /* Adjusted to match the max-width of the main section */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pricing:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#pricing button {
+  background-color: red; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Adjusted padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; /* Adjusted font size */
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#pricing button:hover {
+  background-color: darkred; /* Slightly darker green on hover */
+}
+
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  margin: 20px 0;
+}
+.favorite-btn p {
+  height: 10px;
+  width: 50px;
+  transition: color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.favorite-btn.active p {
+  color: red;
+  transform: scale(1.8);
 }
